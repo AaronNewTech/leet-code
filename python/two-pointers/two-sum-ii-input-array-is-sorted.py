@@ -1,6 +1,8 @@
 from typing import List
+
 def twoSum(numbers: List[int], target: int) -> List[int]:
-    l, r = 0, len(numbers) - 1
+    l  = 0
+    r = len(numbers) - 1
 
     while l < r:
         if numbers[l] + numbers[r] > target:
