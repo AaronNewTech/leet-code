@@ -1,5 +1,7 @@
 
 const isPalindrome = (s) => {
+
+    // instructions
     // return true if the input string's not letter charaters are remove and 
     // reversed is equal to the input string
 
@@ -15,7 +17,6 @@ const isPalindrome = (s) => {
 
         // checks if pointer values are not equal and returns false if not
         if (s[r] !== s[l]) {
-            console.log(false)
             return false
         }
         r--
@@ -23,11 +24,10 @@ const isPalindrome = (s) => {
     }
 
     // if pointers check all chars and they match returns true
-    console.log(true)
     return true
 };
 
-isPalindrome("A man, a plan, a canal: Panama")
-isPalindrome("race a car")
-isPalindrome("race car")
-isPalindrome(" ")
+console.log(isPalindrome("A man, a plan, a canal: Panama"))
+console.log(isPalindrome("race a car"))
+console.log(isPalindrome("race car"))
+console.log(isPalindrome(" "))
