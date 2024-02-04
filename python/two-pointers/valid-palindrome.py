@@ -10,10 +10,8 @@ def isPalindrome(s: str) -> bool:
             r -= 1
 
         if s[l].lower() != s[r].lower():
-            print(False)
             return False
         l, r = l + 1, r - 1
-    print(True)
     return True
 
 def alphaNum(c):
@@ -33,8 +31,8 @@ def alphaNum(c):
     # print(False)
     # return False
         
-isPalindrome("A man, a plan, a canal: Panama")
-isPalindrome("race a car")
-isPalindrome("racecar")
-isPalindrome(" ")
-isPalindrome("0P")
+print(isPalindrome("A man, a plan, a canal: Panama"))
+print(isPalindrome("race a car"))
+print(isPalindrome("racecar"))
+print(isPalindrome(" "))
+print(isPalindrome("0P"))

@@ -30,7 +30,7 @@ var minDiffInBST = function (root) {
         }
     }
 
-    console.log(values);
+    // console.log(values);
     return minDiff;
 };
 

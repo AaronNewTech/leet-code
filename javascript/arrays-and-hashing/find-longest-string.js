@@ -4,15 +4,11 @@ function longestWordWithoutNonLetters(string) {
     const longestWord = cleanedWords.reduce(
         (longest, currentWord) =>
       currentWord.length > longest.length ? currentWord : longest, "");
-    console.log(cleanedWords);
     return longestWord;
 }
 
+console.log(longestWordWithoutNonLetters("helloo&& world!!!!!")); // answer helloo
+console.log(longestWordWithoutNonLetters("green.... eggs&& ham")); // answer green
+console.log(longestWordWithoutNonLetters("yellow---submarine")); // answer submarine
 
-const result1 = longestWordWithoutNonLetters("helloo&& world!!!!!"); // answer helloo
-const result2 = longestWordWithoutNonLetters("green.... eggs&& ham"); // answer green
-const result3 = longestWordWithoutNonLetters("yellow---submarine"); // answer submarine
 
-console.log(result1);
-console.log(result2);
-console.log(result3);

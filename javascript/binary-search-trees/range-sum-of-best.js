@@ -22,7 +22,7 @@ var rangeSumBST = function (root, low, high) {
     };
 
     traverse(root);
-    console.log(values);
+    // console.log(values);
     return sum;
 };
 

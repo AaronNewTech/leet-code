@@ -31,7 +31,7 @@ var middleNode = function(head) {
         return values[values.length / 2]
     }
     else {
-        console.log(values[Math.floor(values.length / 2)])
+        // console.log(values[Math.floor(values.length / 2)])
         return values[Math.floor(values.length / 2)]
     }
   
@@ -48,4 +48,4 @@ linkedList.insertFirst(2);
 linkedList.insertFirst(1);
 
 // Call the middleNode function with the linked list as an argument
-middleNode(linkedList.head)
+console.log(middleNode(linkedList.head))

@@ -24,7 +24,6 @@ var getDecimalValue = function(head) {
         curr = curr.next;
     }
 
-    console.log(parseInt(values, 2));
     return parseInt(values, 2);
 };
 
@@ -35,4 +34,4 @@ linkedList.insertFirst(0);
 linkedList.insertFirst(1);
 
 // Call the getDecimalValue function with the linked list as an argument
-getDecimalValue(linkedList.head);
+console.log(getDecimalValue(linkedList.head));

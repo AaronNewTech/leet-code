@@ -7,12 +7,12 @@ var isAnagram = function(s, t) {
 
     // once the strings are sorted we can see if they are the same
     if (s === t) {
-        console.log(true)
+    
         return true
     }
-    console.log(false)
+
     return false
 };
 
-isAnagram("anagram", "nagaram")
-isAnagram("rat", "car")
+console.log(isAnagram("anagram", "nagaram"))
+console.log(isAnagram("rat", "car"))

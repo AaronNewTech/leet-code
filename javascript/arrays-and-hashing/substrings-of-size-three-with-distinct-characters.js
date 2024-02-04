@@ -8,9 +8,8 @@ var countGoodSubstrings = function(s) {
             count++
         }
     }
-    console.log(count)
     return count
 };
 
-countGoodSubstrings("xyzzaz")
-countGoodSubstrings("aababcabc")
+console.log(countGoodSubstrings("xyzzaz"))
+console.log(countGoodSubstrings("aababcabc"))

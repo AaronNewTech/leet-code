@@ -2,7 +2,7 @@ var groupAnagrams = function (strs) {
     // to solve this problem in the easiest and most straightforward way make a map for of each string then use the 
     const anagrams = new Map()
 
-    for (let str in strs) {
+    for (let str of strs) {
         let sorted = str.split('').sort().join('')
 
         if (!anagrams.has(sorted)) {
@@ -10,10 +10,11 @@ var groupAnagrams = function (strs) {
         }
         anagrams.get(sorted).push(str)
     }
-    console.log(Array.from(anagrams.values()))
+    
     return Array.from(anagrams.values())
 };
 
-groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
-groupAnagrams([""])
-groupAnagrams(["a"])
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+console.log(groupAnagrams([""]))
+console.log(groupAnagrams(["a"]))

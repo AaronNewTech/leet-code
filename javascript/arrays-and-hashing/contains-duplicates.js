@@ -13,7 +13,6 @@ var containsDuplicate = function(nums) {
         }
         // if number is unique then it will add it to the set to be checked later
         set.add(num);
-        console.log(set)
     }
 
     // returns false if array has no duplicate values
