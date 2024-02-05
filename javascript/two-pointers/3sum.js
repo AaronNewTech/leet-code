@@ -1,4 +1,6 @@
 var threeSum = function(nums) {
+
+  // instructions
   // return unique arrays with values that add up to 0 for example [0,0,0] and [-3,2,1]
   // tip sort the array to make this easier
 
