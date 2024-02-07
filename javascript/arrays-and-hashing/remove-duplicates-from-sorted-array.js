@@ -13,9 +13,7 @@ var removeDuplicates = function(nums) {
             // updates the current nums i position with counter position
             nums[counter] = nums[i];
             counter++;
-            
-        }
-        
+        } 
     }
     
     return counter;
