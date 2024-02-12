@@ -9,13 +9,19 @@ var maxProfit = function (prices) {
     let r = 1
     let profit = 0
 
+    
     while (r < prices.length) {
+
+        // moves left pointer to right pointer position if left value is greater than right value
         if (prices[l] > prices[r]) {
             l = r
         }
+        
+        // calculates profit
         profit = Math.max(profit, prices[r] - prices[l]) 
         r++
     }
+    
     return profit
 };
 
