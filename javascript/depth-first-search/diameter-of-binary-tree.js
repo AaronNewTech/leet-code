@@ -19,7 +19,8 @@ var diameterOfBinaryTree = function(root) {
     if (root === null) {
             return 0
         }
-    
+
+    // check if whether the left + right, left side or right contain the the longest 2 nodes
     return Math.max(depthFirstSearch(root.left) + depthFirstSearch(root.right), diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.right))
 
 // another solution
