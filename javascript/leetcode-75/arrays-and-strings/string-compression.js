@@ -1,39 +1,47 @@
 var compress = function(chars) {
 
     // compress the string by formatting the char with the number of instances
-    // example a2b4c3
+    // this must be done by manipulating the chars array
 
-    // problem is confusing and has an issue with the solution
+    // problem is confusing and has an issue with the solution that
+    // must return the length of the manipulated chars array
+    // and the chars must be changed to the expected output
 
     
     // initialize read and write pointers
     let read = 0
     let write = 0
 
-
+    // loop 
     while (read < chars.length) {
         
         // initialize counter and current position
-        let count = 0
-        let curr = chars[read]
+        // this allows us to interate here and not lose
+        // our place of the read and write pointers
+        let charCount = 0
+        let currentChar = chars[read]
 
-        // count char instances
-        while (read < chars.length && chars[read] === curr) {
+        // count character instances by checking if read pointer value is the same
+        // as the current character
+        while (read < chars.length && chars[read] === currentChar) {
             read++
-            count++
+            charCount++
         }
 
         // write the chars and number of instances to write
-        chars[write++] = curr
-        if (count > 1) {
+        chars[write++] = currentChar
+        
+        if (charCount > 1) {
 
             // convert the counts to string and write to the chars array
-            for (let num of count.toString()) {
+            for (let num of charCount.toString()) {
                 
-                // writes the char amount in the char array if greater than 1 next to the char
+                // writes the char amount in the char array if greater than 1 
+                // next to the character for instance if count is 3 ["a", "3",]
                 chars[write++] = num
             }
         }
+        
     }
 
     return write
