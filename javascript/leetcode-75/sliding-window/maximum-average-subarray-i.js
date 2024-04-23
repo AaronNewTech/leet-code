@@ -1,5 +1,8 @@
 var findMaxAverage = function(nums, k) {
+    // instructions
     // return the largest possible average for a subarray with a length of k
+    // tip: don't forget that we can start with values in our sliding window
+    // we are doing that in this problem
 
     // the key to this problem is to find the maximum sum
     let maxSum = 0
@@ -29,5 +32,4 @@ var findMaxAverage = function(nums, k) {
 console.log(findMaxAverage([1,12,-5,-6,50,3], 4))
 console.log(findMaxAverage([5], 1))
 console.log(findMaxAverage([1,2,3,4,5,6,7,8,9,10], 5))
-console.log(findMaxAverage([0,4,0,3,2],
-    1))
+console.log(findMaxAverage([0,4,0,3,2], 1))
