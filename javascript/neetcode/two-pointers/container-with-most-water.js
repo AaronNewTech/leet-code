@@ -8,7 +8,7 @@ var maxArea = function (height) {
     // using 2 pointers find the with the most volume
     // formula is height of the lower of 2 bars times
     // distance from each other in the index
-    // lenght * height that is the greatest is the result
+    // length * height that is the greatest is the result
     // the hard part of this algorithm is where to place
     // the pointers initially and what moves them
     // the answer is that they should be at either end
