@@ -2,10 +2,8 @@ from typing import List
 
 def pivotIndex(nums: List[int]) -> int:
 
-        total = sum(nums)
-
         left_total = 0
-        right_total = total
+        right_total = sum(nums)
 
         for i in range(len(nums)):
             right_total -= nums[i]
